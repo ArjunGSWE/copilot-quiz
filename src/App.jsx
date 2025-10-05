@@ -33,11 +33,13 @@ function App() {
 
   return (
     <div className="quiz-container">
+      <button className="restart-btn" onClick={handleRestart}>
+        Restart Quiz
+      </button>
       <h1>Science Instruments Quiz</h1>
       {showScore ? (
         <div className="score-section">
           <h2>Your Score: {score} / {questions.length}</h2>
-          <button onClick={handleRestart}>Restart Quiz</button>
         </div>
       ) : (
         <div className="question-section">
